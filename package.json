@@ -33,8 +33,7 @@
   },
   "devDependencies": {
     "expect.js": "~0.2.0",
-    "mocha": "^10.2.0",
-    "mocha-phantomjs": "^4.1.0"
+    "mocha": "^10.2.0"
   },
   "browser": {
     "xmldom": false
