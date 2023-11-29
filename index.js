@@ -2,6 +2,7 @@ var JXON = require("jxon");
 JXON.config({attrPrefix: '@'});
 
 function togpx( geojson, options ) {
+  let o = null;
   options = (function (defaults, options) {
     for (var k in defaults) {
       if (options.hasOwnProperty(k))
@@ -191,8 +192,7 @@ function togpx( geojson, options ) {
       console.log("warning: unsupported geometry type: "+f.geometry.type);
     }
   });
-  gpx_str = JXON.stringify(gpx);
-  return gpx_str;
+  return JXON.stringify(gpx);
 };
 
 module.exports = togpx;

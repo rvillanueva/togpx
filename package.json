@@ -1,13 +1,11 @@
 {
   "name": "togpx",
-  "version": "0.5.4",
+  "version": "0.5.5",
   "description": "convert geojson to gpx",
   "main": "index.js",
   "scripts": {
     "pretest": "npm ls --depth=Infinity > /dev/null",
-    "test": "npm run test-node && npm run test-webkit",
-    "test-node": "mocha -R spec",
-    "test-webkit": "mocha-phantomjs test/index.html"
+    "test": "mocha -R spec"
   },
   "bin": {
     "togpx": "togpx"
@@ -29,12 +27,11 @@
     "concat-stream": "~1.0.1",
     "jxon": "~2.0.0-beta.5",
     "optimist": "~0.3.5",
-    "xmldom": "~0.1.17"
+    "xmldom": "~0.6.0"
   },
   "devDependencies": {
     "expect.js": "~0.2.0",
-    "mocha": "~2.1.0",
-    "mocha-phantomjs": "^4.1.0"
+    "mocha": "^10.2.0"
   },
   "browser": {
     "xmldom": false
