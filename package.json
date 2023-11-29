@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "pretest": "npm ls --depth=Infinity > /dev/null",
-    "test": "npm run test-node && npm run test-webkit",
-    "test-node": "mocha -R spec",
-    "test-webkit": "mocha-phantomjs test/index.html"
+    "test": "mocha -R spec"
   },
   "bin": {
     "togpx": "togpx"
@@ -33,8 +31,7 @@
   },
   "devDependencies": {
     "expect.js": "~0.2.0",
-    "mocha": "^10.2.0",
-    "mocha-phantomjs": "^4.1.0"
+    "mocha": "^10.2.0"
   },
   "browser": {
     "xmldom": false
