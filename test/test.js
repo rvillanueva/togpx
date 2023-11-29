@@ -746,3 +746,5 @@ describe("options", function () {
     expect(wpt.getElementsByTagName("link")).to.have.length(1);
     expect(wpt.getElementsByTagName("link")[0].getAttribute("href")).to.equal("http://example.com");
   });
+
+});
